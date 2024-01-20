@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.headerAlign {
+    display: flex;
+    justify-content: center;
+}
+header {
+    min-height: 70px;
+    width: 100%;
+    background-color: rgb(32, 3, 38);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+h2 {
+    color: white;
+    margin: 0px 0px 10px 0px;
+    font-size: 1.3rem;
+}
+.website-logo {
+    height: 30px;
+    width: 30px;
+}
+.mobile-menu {
+    width: 30px;
+    height: 30px;
+}
+.tareas-completadas, .tareas, .agregar-tareas {
+    background-color: rgb(32, 3, 38);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+body {
+    background-color: rgb(11, 1, 13);
+    margin: 20px;
+}
+label {
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"], textarea {
+    min-height: 40px;
+    width: 100%;
+    max-width: 700;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+.dashboard {
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+.add-task {
+    height: 40px;
+    padding: 5px 20px;
+    font-weight: 700;
+    background-color: #fbd579;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+.add-task:hover {
+    cursor: pointer;
+    background-color: #f3aa02;
+}
+.change-state {
+    color: white;
+    background-color: rgb(255, 55, 92);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    transition: 0.3s ease-in;
+    opacity: 0;
+    border-radius: 10px;
+}
+.mostrar {
+    opacity: 1;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.buttons img {
+    width: 20px;
+    height: 20px;
+    gap: 20px;
+}
+.buttons img:hover {
+    cursor: pointer;
+}
+.tarea-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #340145;
+    color: white;
+}
+.finished {
+    background-color: #340145;
+    border: none;
+}
+@media (min-width: 1280px) {
+    .dashboard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

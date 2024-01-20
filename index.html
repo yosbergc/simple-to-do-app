@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>TasHelp - Organiza tu día a día</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="headerAlign">
+    <header>
+        <img src="favicon.png" alt="Website logo" class="website-logo">
+        <section class="mobile-header">
+            <img src="hamburger.svg" alt="Hamburger Icon" class="mobile-menu">
+        </section>
+    </header>
+    </section>
+    <section class="dashboard">
+        <section class="parteUno">
+            
+            <section class="tareas">
+                <h2>Tareas por hacer</h2>
+                <div class="tareas-inner">
+
+                </div>
+            </section>
+            <section class="tareas-completadas">
+                <h2>Tareas completadas</h2>
+                <div class="tareas-completadas-inner">
+                    
+                </div>
+            </section>
+        </section>
+        <section class="agregar-tareas">
+            <h2>Agregar tareas</h2>
+            <label for="titulo">Titulo de la tarea</label>
+            <input type="text" name="titulo" id="titulo">
+            <label for="descripcion">Descripción de la tarea</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="3"></textarea>
+            <button type="submit" class="add-task">Agregar tarea</button>
+        </section>
+    </section>
+    <div class="change-state"></div>
+    <script src="main.js"></script>
+</body>
+</html>
